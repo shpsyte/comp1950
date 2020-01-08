@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #ccc;
+	font-family: "Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco,  monospace;	
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+p, li {
+	line-height: 1.4;	
+}
+
+.wrapper {
+	width: 960px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #009900;
+	padding: 30px;	
+}
+
+header h1 {
+	color: white;
+	margin: 0;	
+}
+
+main {
+	padding: 30px;	
+}
+
+main p:first-child {
+	margin-top: 0;	
+}
+
+article .no-filter {
+	margin-right: 30px;	
+}
+
+article img + h2 {
+	margin-top: 40px;	
+}
+
+/* CSS Filters */
+
+
+
+/* End CSS Filters */
+
+footer {
+	border-top: 1px dotted #ccc;
+	padding: 20px 30px;	
+}
+
+footer p:first-child {
+	margin-top: 0;	
+}
+
+footer p:last-child {
+	margin-bottom: 0;	
+}

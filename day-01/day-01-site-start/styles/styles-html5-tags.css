@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* General Styles */
+
+body {
+	background-color: #999;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+header, main, footer {
+	display: block;
+	padding: 0 30px;
+}
+
+/* End General Styles */
+
+/* Wrapper Styles */
+
+.wrapper {
+	width: 960px; 
+	margin: 0 auto; /* 0 = top and bottom / auto = left and right */
+	background-color: white;	
+}
+
+/* End Wrapper Styles
+
+/* Header Styles */
+
+header {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #063;
+	color: white;
+}
+
+/* End Header Styles */
+
+/* Main Navigation Styles */
+
+nav {
+	display: block;
+	background-color: #069;
+	color: white;
+	overflow: hidden; /* prevents collapse if children are floated */	
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;	
+}
+
+nav li {
+	display: inline;	
+}
+
+nav li a {
+	display: block;
+	color: white;
+	float: left;
+	text-decoration: none;
+	height: 45px;
+	line-height: 45px; /* if equal to height will center text top and bottom */
+	width: 100px;
+	text-align: center;
+	border-right: 1px dotted #000066;
+}
+
+nav li a:focus,
+nav li a:hover,
+nav li a:active {
+	background-color: #0984FF;	
+}
+
+
+/* End Main Navigation Styles */
+
+/* Start Content Styles */
+
+main {
+	display: block;	
+}
+
+main article {
+	display: block;
+	background-color: #0CF;
+	padding: 20px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+article aside {
+	float: right;
+	background-color: white;
+	border: 1px dotted #333333;
+	padding: 5px 15px;
+	margin-left: 20px;
+	width: 150px;
+}
+
+article aside ul {
+	padding: 0;
+	list-style-position: inside;	
+}
+
+article figure {
+	margin: 0 20px 10px 0;
+	padding: 9px;
+	background-color: white;
+	border: 1px solid #666;
+	float: left;
+}
+
+article time {
+	font-style: italic;
+}
+
+figure img {
+	display: block;
+	margin: 0 auto;	
+}
+
+figcaption {
+	text-align: center;	
+}
+
+/* End Content Styles */
+
+/* Footer Styles */
+
+footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #C09;
+	color: #FFF;
+}
+
+footer p {
+	margin-left: 10px;	
+}
+
+/* End Footer Styles */
+
+
+
+

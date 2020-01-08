@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* css reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+
+/* font-face styles */
+
+@font-face {
+    font-family: 'ImpactLabelRegular';
+    src: url('../fonts/Impact-Label-webfont.eot');
+    src: url('../fonts/Impact-Label-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Impact-Label-webfont.woff') format('woff'),
+         url('../fonts/Impact-Label-webfont.ttf') format('truetype'),
+         url('../fonts/Impact-Label-webfont.svg#ImpactLabelRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HattoriHanzoLight';
+    src: url('../fonts/Hattori-Hanzo-webfont.eot');
+    src: url('../fonts/Hattori-Hanzo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Hattori-Hanzo-webfont.woff') format('woff'),
+         url('../fonts/Hattori-Hanzo-webfont.ttf') format('truetype'),
+         url('../fonts/Hattori-Hanzo-webfont.svg#HattoriHanzoLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ribbonregular';
+    src: url('../fonts/ribbon-v2-2011-webfont.eot');
+    src: url('../fonts/ribbon-v2-2011-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ribbon-v2-2011-webfont.woff') format('woff'),
+         url('../fonts/ribbon-v2-2011-webfont.ttf') format('truetype'),
+         url('../fonts/ribbon-v2-2011-webfont.svg#ribbonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pigeonregular';
+    src: url('../fonts/pigeon-webfont.eot');
+    src: url('../fonts/pigeon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pigeon-webfont.woff') format('woff'),
+         url('../fonts/pigeon-webfont.ttf') format('truetype'),
+         url('../fonts/pigeon-webfont.svg#pigeonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* end font-face styles */
+
+/* general styles */
+
+body {
+	background-color: #CCCCCC;	
+}
+
+/* end general styles */
+
+/* wrapper styles */
+
+.f-08 .wrapper {
+	height: 100%;	
+}
+
+.wrapper {
+	background-color: #FFFFFF;
+	margin: 30px auto 0;
+	width: 900px;
+	padding: 30px;
+	min-height: 480px;
+}
+
+/* end wrapper styles */
+
+/* box styles */
+
+.box-main {
+	border: #000000 solid 2px;
+	min-height: 480px;
+}
+
+.box-main header,
+.box-main section {
+	padding: 30px;	
+}
+
+.box-main header {
+	background-color: #009900;	
+}
+
+.box-main header h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 36px;
+}
+
+.box-main section h1 {
+	font-size: 24px;
+	margin: 0 0 20px 0;	
+}
+
+.box-main section p {
+	margin: 0 0 20px 0;	
+}
+
+.f-08 .box-main p {
+	margin: 10px	
+}
+
+.f-09 .box-main {
+	position: relative;	
+}
+
+.box-01,
+.box-02,
+.box-05,
+.box-06,
+.box-07 {
+	padding: 30px;
+	position: relative;
+	left: 424px;
+	top: 130px;
+	height: 240px;
+	width: 240px;
+	background-color: #006600;
+	color: #FFFFFF;
+}
+
+.box-02 {
+	position: absolute;	
+	top: 150px;
+}
+
+.box-03 {
+	position: absolute;
+	top: 120px;
+	left: 50px;
+	width: 120px;
+	height: 120px;
+	background-color: #00CCFF;
+	padding: 10px;	
+}
+
+.box-04 {
+	position: fixed;
+	top: 200px;
+	left: 50px; 
+	height: 80px;
+	width: 240px;
+	background-color: #006600;
+	color: #FFFFFF;		
+}
+
+.box-05,
+.box-06,
+.box-07 {
+	position: absolute;	
+}
+
+.box-05 {
+	background-color: #FF0000;
+	top: 80px;
+	left: 50px;
+	z-index: 1;
+}
+
+.box-06 {
+	background-color: #00FF00;
+	top: 100px;
+	left: 180px;
+	z-index: 2;	
+}
+
+.box-07 {
+	background-color: #0000FF;	
+	top: 120px;
+	left: 300px;
+	z-index: 3;
+}
+
+/* end box styles */
+
+/* section styles */
+
+
+
+.f-13 section h1,
+.f-14 section h1,
+.f-15 section h1,
+.f-16 section h1 {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+.f-13 audio,
+.f-14 video,
+.f-15 iframe {
+	margin: 20px 0 15px; 0;	
+}
+
+.f-18 .box-main {
+	min-height: 520px;	
+}
+
+.f-18 ul {
+	float: left;
+	width: 238px;
+	margin: 0 20px;
+	list-style-type: disc;	
+}
+
+.f-18 li {
+	margin: 0 0 10px; 0;	
+}
+
+.f-18 a {
+	font-size: 20px;
+	display: block;
+	height: 36px;
+	padding: 0 0 0 20px;
+	line-height: 36px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.f-18 a:focus,
+.f-18 a:hover,
+.f-18 a:active {
+	background-color: #DEFEDA;	
+}
+
+.f-20 audio {
+	margin-bottom: 15px;	
+}
+
+.f-21 video,
+.f-22 iframe,
+.f-23 iframe {
+	margin-bottom: 20px;	
+}
+
+
+
+
+/* end section styles */
+
+
+
+
+
+
+
+
