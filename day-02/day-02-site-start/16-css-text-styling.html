@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>14 - CSS Text Styling</title>
+<link rel="stylesheet" href="styles/styles-css-type-styling.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <h1>CSS Type Styling</h1>
+  
+  <hr />	
+  
+  <h2>Font-Size</h2>
+  
+  <p><span class="code_snippet">font-size</span> is used to set the sizes of fonts.</p>
+  
+  <p>Set the paragraph below to a font-size of "24px"</p>
+  
+  <p class="p_01">This paragraph has a font-size of 24px...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper felis libero, sed iaculis lectus gravida sit amet. Donec a consectetur sem, eget egestas tellus.</p>
+  
+  <hr />	 
+ 
+  <h2>Line-Height</h2>
+  
+  <p><span class="code_snippet">line-height</span> sets the spacing between lines of text. It can be set as a numeric value with a unit such as "px" or "ems", or it can be set as a ratio to the font size. If using a ratio than the value of "1" means exactly the same size as the font-size.</p>
+  
+  <p>Set the paragraph below to have a line-height of 2.1. This is a ratio which means 2.1 x the font-size.</p>
+  
+  <p class="p_02">This paragraph has a line-height of 2.1...Donec elementum finibus rhoncus. Sed et ipsum elementum diam vehicula ornare. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam tristique rutrum urna quis dignissim. Quisque euismod semper fringilla. Sed eget interdum neque, efficitur blandit metus.</p>
+  
+  <hr />
+  
+  <h2>Width</h2>
+  
+  <p><span class="code_snippet">width</span> sets the line length of text. It is more often set on the parent element of a text element, but it can be set directly on a text element as well.</p>
+  
+  <p>Set the paragraph below to have a width of 200px.</p>
+  
+  <p class="p_03">Quisque nec nisi sit amet dolor semper iaculis. Donec feugiat tincidunt turpis in luctus. Etiam tortor augue, porta id ex vel, ornare egestas lectus. Sed vitae blandit dolor. Sed tristique, tortor quis finibus egestas, lectus massa sodales nibh, sit amet tincidunt augue est vel urna.</p>
+  
+  <hr />
+  
+  <h2>Letter Spacing</h2>
+  
+  <p><span class="code_snippet">letter-spacing</span> sets the space between letters in lines of text.</p>
+  
+  <p>Set the heading below to have a letter-spacing value of 60px.</p>
+  
+  <h3 class="h3_01">World</h3>
+  
+  <hr />
+  
+  <h2>Word Spacing</h2>
+  
+  <p><span class="code_snippet">word-spacing</span> sets the space between words of text.<p>
+  
+  <p>Set the heading below to have a word-spacing value of 50px.</p>
+  
+  <h3 class="h3_02">All About Pluto</h3>
+  
+  <hr />
+  
+  <h2>Margins</h2>
+  
+  <p><span class="code_snippet">margin</span> is used to set the spacing between blocks of text.</p>
+  
+  <p>Set the margin-bottom of the two paragraphs below to 30px.</p>
+  
+  <p class="p_04">Donec varius lacinia nunc, ut volutpat mi molestie auctor. Duis id ornare eros. Ut aliquam nisl ullamcorper odio placerat ultrices. Aliquam quis massa nec est ultrices sodales sit amet ac odio. Nunc fringilla diam non nisi dignissim rhoncus. Nunc semper vitae mi quis sagittis. Sed quis dui feugiat magna lacinia pretium id sit amet justo. Donec aliquet cursus condimentum.</p>
+  
+  <p class="p_04">Aenean consectetur, purus vitae sagittis porttitor, mauris massa bibendum urna, id rutrum nisl massa tristique turpis. Suspendisse fringilla mauris consectetur nisl blandit consequat. Vivamus tincidunt iaculis risus.</p>
+  
+  <hr />
+  
+  <h2>Text-Transform</h2>
+  
+  <p><span class="code_snippet">text-transform</span> is used to set the capitalization of the text. You can set text transform to the following values:</p>
+  
+  <ul>
+    <li><b>none</b>: default, no capitalization applied</li>
+    <li><b>capitalize</b>: sets the first letter of each word to uppercase</li>
+    <li><b>uppercase</b>: sets the letters to all uppercase</li>
+    <li><b>lowercase</b>: sets the letters to all lowercase</li>
+  </ul>
+  
+  <p>Set the heading below to all uppercase using text-transform.</p>
+  
+  <h3 class="h3_03">Star Wars</h3>
+  
+  <hr />
+  
+  <h2>Text-Decoration</h2>
+  
+  <p><span class="code_snippet">text-decoration</span> is used to set special styling on text. You can set text-decoration to the following values:</p>
+  
+  <ul>
+    <li><b>none</b>: no text decoration applied. It is often used to overide default text-decoration of links</li>
+    <li><b>overline</b>: creates a line above the text</li>
+    <li><b>underline</b>: creates a line below the text. In general you want to only use underlines in web design if the text is a link</li>
+    <li><b>line-through</b>: create a line that runs through the middle of the text</li>
+  </ul>
+  
+  <p>Set the text below to have a text-decoration of line-through.</p>
+  
+  <p class="p_05">Maecenas ultrices magna dictum magna</p>
+  
+  <hr />
+  
+  <h2>Text-Align</h2>
+  
+  <p><span class="code_snippet">text-align</span> is used to set the alignment of text.</p>
+  
+  <ul>
+    <li><b>left</b>: aligns text to the left (default)</li>
+    <li><b>right</b>: aligns text to the right</li>
+    <li><b>center</b>: aligns text to the center of its parent container</li>
+    <li><b>justify</b>: stretches each line of text so that each line of text has the same width</li>
+  </ul>
+  
+  <p>Set the text below to have a text-align property of justify.</p>
+  
+  <p class="p_06">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, quidem, ipsa in ab tempora modi obcaecati molestias sequi deserunt expedita temporibus voluptatum officiis labore possimus error eum esse ipsum repellat dolorum odit eos nesciunt officia at? Quo, dolores, illo, aperiam sequi voluptatibus rerum officia consequatur vitae molestiae labore reiciendis dolorum tempore saepe. Labore, amet, natus, assumenda eos hic expedita fugiat laborum soluta minima aut exercitationem veritatis aliquam iste voluptatem vero adipisci nobis? Veniam, iusto ducimus voluptate dignissimos minima nihil cumque vel cupiditate earum tenetur. Officia, expedita nobis qui illum dolorum non deserunt impedit adipisci maxime ducimus neque esse ullam inventore architecto labore cum eius. Voluptatum, maiores voluptatem eligendi accusantium enim earum est. Doloremque, vero nam deserunt esse sed nemo odit.</p>
+  
+  <hr />
+  
+  <h2>Word-Wrap</h2>
+  
+  <p><span class="code_snippet">word-wrap</span> allows you to set how long words will wrap. The default is for long words not to wrap accept at allowed break points (normal).</p>
+  
+  <ul>
+    <li><b>normal</b>: break words only at allowed break points</li>
+    <li><b>break-word</b>: allows long words to break on to multiple lines</li>
+  </ul>
+  
+  <p>Set the text below to break-word.</p>
+  
+  <div class="box box-01">
+  	<p class="p_07">Supercalifragilisticexpialidocious</p>
+  </div><!-- end box-01 -->
+  
+  <hr />
+  
+  <h2>White-Space</h2>
+  
+  <p><span class="code_snippet">white-space</span>: determines how lines of text will wrap. The default is for lines of text to wrap on to multiple lines.</p>
+  
+  <p><strong>Note</strong>: These are not all the values possible for this property, but they are the most common ones. To see all the properies read <a href="http://www.w3schools.com/cssref/pr_text_white-space.asp" title="W3Schools - CSS white-space Property">this</a> article.</p>
+  
+  <ul>
+    <li><b>normal</b>: text will wrap to multiple lines. This is the defualt.</li>
+    <li><b>nowrap</b>: text will not wrap unless the text hits a  <span class="code_snippet">&lt;br /></span> tag</li>
+  </ul>
+  
+  <p>Set the white-space property for the paragraph below to nowrap.</p>
+  
+  <div class="box box-01">
+  	<p class="p_08">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div><!-- end box-01 -->
+  
+  <hr />
+  
+  <h2>Text-Overflow</h2>
+  
+  <p><span class="code_snippet">text-overflow</span> property is used to determine how to show to the user that there is more text available. The default is just tp clip the text.</p>
+  
+  <ul>
+  <li><b>clip</b>: Just clips the text. This is the default value</li>
+  <li><b>ellipsis</b>: Adds a "..." show the user that more text is present</li>
+  </ul>
+  
+  <p>By default the text is clipped, change this so that the overflowed text is represented by an ellipsis. You will have to set the overflow property on the paragraph tag to hidden and set the white-space property to nowrap.</p>
+  
+  <div class="box box-02">
+  	<p class="p_09">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div><!-- end box-01 -->
+  
+  
+  
+  
+</div><!-- end wrapper -->
+
+</body>
+</html>

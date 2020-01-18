@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: grey;
+}
+
+p {
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper > h1:first-of-type {
+	margin-top: 0;
+}
+
+.wrapper {
+	max-width: 800px;
+	padding: 30px;
+	margin: 20px auto;
+	background-color: white;
+}
+
+article h1 {
+	text-align: center;
+	margin-top: 0;
+}
+
+.p-italic {
+	font-style: italic;
+}
+
+.banner {
+	position: relative;
+	margin: 0 -30px;
+}
+
+.chapter {
+	padding: 20px;
+	color: white;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+
+
+
+
+
+

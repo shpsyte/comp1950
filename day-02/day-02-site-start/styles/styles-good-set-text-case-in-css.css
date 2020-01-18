@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	background-color: grey;
+}
+
+p {
+	line-height: 1.4;
+}
+
+.wrapper > h1:first-of-type {
+	margin-top: 0;
+	font-size: 2.6rem;
+}
+
+.wrapper {
+	max-width: 800px;
+	padding: 30px;
+	margin: 20px auto;
+	background-color: white;
+}
+
+/*
+
+font-family: 'Trochut', cursive;
+font-family: 'Alegreya', serif;
+
+*/
+
+.banner {
+	background-color: #4B1500;
+	margin: 0 -30px;
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+
+.book-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.book-title h2 {
+	font-size: 7vw;
+	font-family: 'Trochut', cursive;
+	font-weight: 700;
+	color: white;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
+.book-title h3 {
+	margin: 0.3rem;
+	font-size: 3vw;
+	color: white;
+	font-style: italic;
+	font-family: 'Alegreya', serif;
+	font-weight: normal;
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+article h1 {
+	font-size: 2.1rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+article p {
+	font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 800px){
+	
+	.book-title h2 {
+		font-size: 4rem;
+	}
+	
+	.book-title h3 {
+		font-size: 2rem;
+	}
+	
+}
+
+
+
+

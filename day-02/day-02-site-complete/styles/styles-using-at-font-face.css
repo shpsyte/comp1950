@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*!
+ * Web Fonts from Fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2017 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      The Northern Block
+ * License URL: https://www.fontspring.com/licenses/northern-block/webfont
+ *
+ *
+ */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* @font-face declarations */
+
+@font-face {
+	font-family: 'Marvin Visions';
+	src: url('../fonts/marvin-visions-bold.woff2') format('woff2'),
+         url('../fonts/marvin-visions-bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corbert';
+    src: url('../fonts/corbert-regular.woff2') format('woff2'),
+         url('../fonts/corbert-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Corbert';
+    src: url('../fonts/corbert-italic.woff2') format('woff2'),
+         url('../fonts/corbert-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+	background-color: grey;
+}
+
+p {
+	line-height: 1.4;
+}
+
+.wrapper > h1:first-of-type {
+	margin-top: 0;
+	font-size: 2.6rem;
+}
+
+.wrapper {
+	max-width: 800px;
+	padding: 30px;
+	margin: 20px auto;
+	background-color: white;
+}
+
+article h1 {
+	text-align: center;
+	font-size: 3.1rem;
+	font-family: 'Marvin Visions', sans-serif;
+}
+
+.chapter p {
+	line-height: 1.4;
+	font-size: 1.3rem;
+	font-family: Corbert, sans-serif;
+}
+
+.p-italic {
+	font-style: italic;
+	font-weight: normal;
+}
