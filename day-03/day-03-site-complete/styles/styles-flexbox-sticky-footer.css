@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	background-color: grey;
+	margin: 0;
+}
+
+p {
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+}
+
+.wrapper {
+	background-color: #fff;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* flex styles here */
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+header {
+	background-color: #038606;
+	color: white;
+	padding: 30px;
+}
+
+header h1 {
+	line-height: 1;
+	margin: 0;
+}
+
+main {
+	padding: 30px;
+	/* flex styles here */
+	flex: 1;
+}
+
+article h1 {
+	margin-top: 0;
+}
+
+footer {
+	background-color: #038606;
+	color: white;
+	padding: 20px;
+}
+
+footer p {
+	line-height: 1;
+	margin: 0;
+}
+
+
+
+
+

@@ -1,0 +1,150 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;	
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+nav {
+	height: 46px;
+	background-color: #B24AF8;	
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	display: none;	
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	background-color: #B24AF8;	
+}
+
+nav > ul {
+	display: flex;	
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 0 20px;
+	line-height: 46px;
+	display: block;
+	border-left: 2px solid #690086;	
+}
+
+nav > ul > li:last-child > a {
+	border-right: 2px solid #690086;	
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active {
+	background-color: #7830A8;	
+}
+
+nav li {
+	position: relative;	
+}
+
+nav ul > li > ul {
+	position: absolute;
+	height: 0;
+	overflow: hidden;	
+}
+
+nav ul > li:hover > ul,
+nav ul > li.hover > ul {
+	height: auto;	
+}
+
+nav ul ul a {
+	border-left: none;
+	border-top: 1px solid #690086;	
+}
+
+nav .dropdown > a {
+	position: relative;	
+}
+
+nav .dropdown > a:after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 7px solid #fff;
+	bottom: 5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);	
+}
+
+@media only screen and (max-width: 600px){
+
+	button {
+		display: block;
+		width: 49px;
+		height: 35px;
+		background-image: url(../images/hamburger.png);
+		background-size: cover;
+		border: none;
+		background-color: transparent;
+		text-indent: 150%;
+		overflow: hidden;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		cursor: pointer;
+	}
+	
+	nav {
+		flex-wrap: wrap;	
+	}
+	
+	nav > ul {
+		flex-wrap: wrap;
+		flex: 1 1 100%;
+		display: none;	
+	}
+	
+	nav > .open {
+		display: flex;	
+	}
+	
+	nav > ul > * {
+		flex: 1 1 100%;
+		text-align: center;	
+	}
+	
+	nav a {
+		border-left: none;
+		border-top: 1px solid #690086;	
+	}
+	
+	nav > ul > li:last-child > a {
+		border-right: none;	
+	}
+	
+	nav ul > li > ul {
+		position: static;
+		background-color: #000;
+	}
+	
+	nav ul ul a {
+		border-top: 1px solid #fff;	
+	}
+	
+	
+}
