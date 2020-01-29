@@ -1,0 +1,329 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS - Pseudo Class Selectors</title>
+<link rel="stylesheet" href="styles/styles-css-selectors-pseudo-class.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+		<h1>CSS Pseudo Class Selectors</h1>
+	</header>
+	<main>
+		<section>
+			<h1>Pseudo Class Examples</h1>
+			
+			<h2>First and Last Child</h2>
+			
+			<table class="dt dt-01">
+		  	  <caption>Data Table</caption>
+			  <thead>
+				  <tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+					<th>Header 3</th>
+					<th>Header 4</th>
+				  </tr>
+			  </thead>
+			  <tfoot>
+			  	<tr>
+			  		<td colspan="4">&copy; 2018 Michael Whyte</td>
+			  	</tr>
+			  </tfoot>
+			  <tbody>
+				  <tr>
+					<td>First Line 1</td>
+					<td>First Line 2</td>
+					<td>First Line 3</td>
+					<td>First Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Second Line 1</td>
+					<td>Second Line 2</td>
+					<td>Second Line 3</td>
+					<td>Second Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Third Line 1</td>
+					<td>Third Line 2</td>
+					<td>Third Line 3</td>
+					<td>Third Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Fourth Line 1</td>
+					<td>Fourth Line 2</td>
+					<td>Fourth Line 3</td>
+					<td>Fourth Line 4</td>
+				  </tr>
+				    <tr>
+					<td>Fifth Line 1</td>
+					<td>Fifth Line 2</td>
+					<td>Fifth Line 3</td>
+					<td>Fifth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Sixth Line 1</td>
+					<td>Sixth Line 2</td>
+					<td>Sixth Line 3</td>
+					<td>Sixth Line 4</td>
+				  </tr>
+			  </tbody>
+			</table>
+
+			<h2>Nth Child</h2>
+		
+			<table class="dt dt-02">
+		  	  <caption>Data Table</caption>
+			  <thead>
+				  <tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+					<th>Header 3</th>
+					<th>Header 4</th>
+				  </tr>
+			  </thead>
+			  <tfoot>
+			  	<tr>
+			  		<td colspan="4">&copy; 2018 Michael Whyte</td>
+			  	</tr>
+			  </tfoot>
+			  <tbody>
+				  <tr>
+					<td>First Line 1</td>
+					<td>First Line 2</td>
+					<td>First Line 3</td>
+					<td>First Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Second Line 1</td>
+					<td>Second Line 2</td>
+					<td>Second Line 3</td>
+					<td>Second Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Third Line 1</td>
+					<td>Third Line 2</td>
+					<td>Third Line 3</td>
+					<td>Third Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Fourth Line 1</td>
+					<td>Fourth Line 2</td>
+					<td>Fourth Line 3</td>
+					<td>Fourth Line 4</td>
+				  </tr>
+				    <tr>
+					<td>Fifth Line 1</td>
+					<td>Fifth Line 2</td>
+					<td>Fifth Line 3</td>
+					<td>Fifth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Sixth Line 1</td>
+					<td>Sixth Line 2</td>
+					<td>Sixth Line 3</td>
+					<td>Sixth Line 4</td>
+				  </tr>
+			  </tbody>
+			</table>
+			
+			<h2>Nth Child - Even and Odd</h2>
+			
+			<table class="dt dt-03">
+		  	  <caption>Data Table</caption>
+			  <thead>
+				  <tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+					<th>Header 3</th>
+					<th>Header 4</th>
+				  </tr>
+			  </thead>
+			  <tfoot>
+			  	<tr>
+			  		<td colspan="4">&copy; 2018 Michael Whyte</td>
+			  	</tr>
+			  </tfoot>
+			  <tbody>
+				  <tr>
+					<td>First Line 1</td>
+					<td>First Line 2</td>
+					<td>First Line 3</td>
+					<td>First Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Second Line 1</td>
+					<td>Second Line 2</td>
+					<td>Second Line 3</td>
+					<td>Second Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Third Line 1</td>
+					<td>Third Line 2</td>
+					<td>Third Line 3</td>
+					<td>Third Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Fourth Line 1</td>
+					<td>Fourth Line 2</td>
+					<td>Fourth Line 3</td>
+					<td>Fourth Line 4</td>
+				  </tr>
+				    <tr>
+					<td>Fifth Line 1</td>
+					<td>Fifth Line 2</td>
+					<td>Fifth Line 3</td>
+					<td>Fifth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Sixth Line 1</td>
+					<td>Sixth Line 2</td>
+					<td>Sixth Line 3</td>
+					<td>Sixth Line 4</td>
+				  </tr>
+			  </tbody>
+			</table>
+			
+			<h2>Nth Child - Custom Pattern</h2>
+			
+			<table class="dt dt-04">
+		  	  <caption>Data Table</caption>
+			  <thead>
+				  <tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+					<th>Header 3</th>
+					<th>Header 4</th>
+				  </tr>
+			  </thead>
+			  <tfoot>
+			  	<tr>
+			  		<td colspan="4">&copy; 2018 Michael Whyte</td>
+			  	</tr>
+			  </tfoot>
+			  <tbody>
+				  <tr>
+					<td>First Line 1</td>
+					<td>First Line 2</td>
+					<td>First Line 3</td>
+					<td>First Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Second Line 1</td>
+					<td>Second Line 2</td>
+					<td>Second Line 3</td>
+					<td>Second Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Third Line 1</td>
+					<td>Third Line 2</td>
+					<td>Third Line 3</td>
+					<td>Third Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Fourth Line 1</td>
+					<td>Fourth Line 2</td>
+					<td>Fourth Line 3</td>
+					<td>Fourth Line 4</td>
+				  </tr>
+				    <tr>
+					<td>Fifth Line 1</td>
+					<td>Fifth Line 2</td>
+					<td>Fifth Line 3</td>
+					<td>Fifth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Sixth Line 1</td>
+					<td>Sixth Line 2</td>
+					<td>Sixth Line 3</td>
+					<td>Sixth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Seventh Line 1</td>
+					<td>Seventh Line 2</td>
+					<td>Seventh Line 3</td>
+					<td>Seventh Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Eighth Line 1</td>
+					<td>Eighth Line 2</td>
+					<td>Eighth Line 3</td>
+					<td>Eighth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Nineth Line 1</td>
+					<td>Nineth Line 2</td>
+					<td>Nineth Line 3</td>
+					<td>Nineth Line 4</td>
+				  </tr>
+			  </tbody>
+			</table>
+			
+			<h2>Nth of Type</h2>
+			
+			<table class="dt dt-05">
+		  	  <caption>Data Table</caption>
+			  <thead>
+				  <tr>
+					<th>Header 1</th>
+					<th>Header 2</th>
+					<th>Header 3</th>
+					<th>Header 4</th>
+				  </tr>
+			  </thead>
+			  <tfoot>
+			  	<tr>
+			  		<td colspan="4">&copy; 2018 Michael Whyte</td>
+			  	</tr>
+			  </tfoot>
+			  <tbody>
+				  <tr>
+					<td>First Line 1</td>
+					<td>First Line 2</td>
+					<td>First Line 3</td>
+					<td>First Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Second Line 1</td>
+					<td>Second Line 2</td>
+					<td>Second Line 3</td>
+					<td>Second Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Third Line 1</td>
+					<td>Third Line 2</td>
+					<td>Third Line 3</td>
+					<td>Third Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Fourth Line 1</td>
+					<td>Fourth Line 2</td>
+					<td>Fourth Line 3</td>
+					<td>Fourth Line 4</td>
+				  </tr>
+				    <tr>
+					<td>Fifth Line 1</td>
+					<td>Fifth Line 2</td>
+					<td>Fifth Line 3</td>
+					<td>Fifth Line 4</td>
+				  </tr>
+				  <tr>
+					<td>Sixth Line 1</td>
+					<td>Sixth Line 2</td>
+					<td>Sixth Line 3</td>
+					<td>Sixth Line 4</td>
+				  </tr>
+			  </tbody>
+			</table>
+			
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2018 Michael Whyte</p>
+	</footer>
+</div>
+</body>
+</html>

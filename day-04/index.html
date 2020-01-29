@@ -1,0 +1,59 @@
+<style>
+.control-me::after {
+    content: "😃";
+    font-size: 100px;
+}
+
+.ted::after {
+    content: "😩";
+    font-size: 100px;
+}
+
+#toggle:checked ~ .control-me::after {
+    content: "😩";
+}
+
+
+#toggle:checked ~ .ted::after {
+    content: "😃";
+}
+label {
+    background: #A5D6A7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    
+   
+}
+.ted
+{
+    min-width: 100px;
+    max-width: 100px;
+    
+    content: "asdfasd";
+}
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font: 900 24px/1.4 -system-ui, sans-serif;
+}
+
+</style>
+
+
+<div>
+    <label for="toggle">Toggle</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+    
+    <div class="ted"></div>
+    <div class="control-me"></div>
+</div>
+

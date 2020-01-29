@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS - Border-Radius</title>
+<link rel="stylesheet" href="styles/styles-css-border-radius.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<header>
+		<h1>CSS Border-Radius</h1>
+	</header>
+	<main>
+		<section>
+			<h1>Border Radius Examples</h1>
+			<h2>All Corners the Same</h2>
+			<div class="box br-basic"></div>
+			<h2>Opposite Corners the Same</h2>
+			<div class="box br-opposite"></div>
+			<h2>All four Corners Different</h2>
+			<div class="box br-different"></div>
+			<h2>Elliptical</h2>
+			<div class="box br-elliptical"></div>
+			<h2>Circle</h2>
+			<div class="box br-circle"></div>
+			<h2>Circular Images</h2>
+			<p>To make images circular the images must be perfectly square. If clients will be uploading images to a CMS and having clients crop images to perfect square is impratical then use CSS aspect ratio code on a wrapping element combined with "object-fit: cover;" on the images. See demo below.</p>
+			<div class="row">
+				<div class="col">
+					<figure>
+						<div class="ar-square">
+							<img src="images/kittens-01.jpg" alt="Orange kitten">
+						</div>
+						<figcaption>
+							<h2>Terrance</h2>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure>
+						<div class="ar-square">
+							<img src="images/kittens-02.jpg" alt="Brown kitten">
+						</div>
+						<figcaption>
+							<h2>Clifford</h2>
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col">
+					<figure>
+						<div class="ar-square">
+							<img src="images/kittens-08.jpg" alt="White kitten">
+						</div>
+						<figcaption>
+							<h2>Princess</h2>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2018 Michael Whyte</p>
+	</footer>
+</div>
+
+</body>
+</html>

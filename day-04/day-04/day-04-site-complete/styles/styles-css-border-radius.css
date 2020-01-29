@@ -1,0 +1,193 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global Variables */
+:root {
+	
+	--brand-color: #4256f4;
+   
+   /* Grid Variables */
+   --one-col: 100%;	
+   --two-col: 49%;
+   --three-col: 32%;
+   --four-col: 23.5%;
+	
+   /* Layout Variables */
+   /* Calculations explained: 
+	  30 -> spacing in pixels
+	  16 -> 1rem = 16px
+	  To figure out the rem value of a 
+	  pixel value divide the px value
+	  by 16 (assuming the user has left
+	  the default size as 16 in the browser
+	  settings)
+   */
+   --space: calc(30 / 16);	
+   --pad: calc(var(--space) * 1rem);
+   --pad-half: calc(var(--pad) / 2);
+	
+   /* Font-Stacks	*/
+   --font-headings: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   --font-body: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+}
+
+/* Resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Typography */
+body {
+	line-height: 1.4;
+	font-family: var(--font-body);
+}
+
+h1, h2, h3, nav a {
+	font-family: var(--font-headings);
+}
+
+/* General Styles */
+body {
+	margin: 0;
+	background-color: #2E2E2E;
+}
+
+.wrapper {
+	background-color: white;
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+header {
+	--color: white;
+	background-color: var(--brand-color);
+	color: var(--color);
+}
+
+header h1 {
+	margin: 0;
+	padding: var(--pad-half) var(--pad);
+}
+
+/* Main Styles */
+main {
+	padding: var(--pad);
+}
+
+main h1:first-child,
+main h2:first-child {
+	margin-top: 0;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: var(--pad) 0;
+}
+
+.col {
+	width: var(--three-col);
+	padding: var(--pad);
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+.col figure {
+	margin: 0;
+}
+
+.col figure h2 {
+	margin-top: 0.6em;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+
+.box {
+	width: 250px;
+	height: 250px;
+	background-color: #01A24A;
+}
+
+
+/*  Border-Radius Styles */
+.br-basic {
+	border-radius: 30px;
+}
+
+.br-opposite {
+	border-radius: 45px 90px;
+}
+
+.br-different {
+	border-radius: 45px 90px 30px 15px;
+}
+
+.br-elliptical {
+	border-radius: 150px / 75px;
+}
+
+.br-circle {
+	border-radius: 50%;
+}
+
+/* Circular images */
+
+/* Aspect ratio boxes */
+.ar-square {
+	position: relative;
+}
+
+.ar-square:before {
+  content: "";
+  width: 1px;
+  margin-left: -1px;
+  float: left;
+  height: 0;
+  /* padding-top - 100% = square */
+  padding-top: 100%;
+}
+.ar-square:after { /* to clear float */
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Make non-square images square without
+   distorting the images */
+.col figure img {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    /* Make images circular with
+	   border-radius */
+	border-radius: 50%;
+}
+
+
+/* footer styles */
+footer {
+	border-top: 1px dotted #ccc;
+	padding: var(--pad-half) var(--pad);
+}
+
+footer p {
+	margin: 0;
+}

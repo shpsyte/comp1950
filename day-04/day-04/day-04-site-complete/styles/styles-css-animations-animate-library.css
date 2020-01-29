@@ -1,0 +1,407 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global Variables */
+:root {
+	
+	--brand-color: #4256f4;
+   
+   /* Grid Variables */
+   --one-col: 100%;	
+   --two-col: 49%;
+   --three-col: 32%;
+   --four-col: 23.5%;
+   --five-col: 18.4%;  
+	
+   /* Layout Variables */
+   /* Calculations explained: 
+	  30 -> spacing in pixels
+	  16 -> 1rem = 16px
+	  To figure out the rem value of a 
+	  pixel value divide the px value
+	  by 16 (assuming the user has left
+	  the default size as 16 in the browser
+	  settings)
+   */
+   --space: calc(30 / 16);	
+   --pad: calc(var(--space) * 1rem);
+   --pad-half: calc(var(--pad) / 2);
+	
+   /* Font-Stacks	*/
+   --font-headings: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   --font-body: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+}
+
+/* Resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Typography */
+body {
+	line-height: 1.4;
+	font-family: var(--font-body);
+}
+
+h1, h2, h3, nav a {
+	font-family: var(--font-headings);
+}
+
+/* General Styles */
+body {
+	margin: 0;
+	background-color: #2E2E2E;
+}
+
+.wrapper {
+	background-color: white;
+	margin: 0 auto;
+	max-width: 860px;
+}
+
+header {
+	--color: white;
+	background-color: var(--brand-color);
+	color: var(--color);
+}
+
+header h1 {
+	margin: 0;
+	padding: var(--pad-half) var(--pad);
+}
+
+/* Main Styles */
+main {
+	padding: var(--pad);
+}
+
+main h1:first-child,
+main h2:first-child {
+	margin-top: 0;
+	width: 100%;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: var(--pad) 0;
+	align-items: flex-start;
+}
+
+.col {
+	width: var(--two-col);
+	padding: var(--pad);
+	border: 1px solid #ccc;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 2%;
+	--box-size: 130px;
+}
+
+.image-gallery {
+	background-color: #6C4C0F;
+	padding: 20px;
+}
+
+.image-gallery .col {
+	width: var(--five-col);
+	padding: 0;
+	display: block;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.image-gallery img {
+	display: block;
+	border: 8px solid white;
+	outline: 2px solid black;
+}
+
+.tr-demo-img {
+	max-width: 300px;
+	height: auto;
+	border: 8px solid green;
+}
+
+.col h2 {
+	margin-bottom: 2em;
+}
+
+.col figure {
+	margin: 0;
+}
+
+.col figure h2 {
+	margin-top: 0.6em;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.box {
+	--rgb: 1, 162, 74;
+	--alpha: 1;
+	--bg-color: rgba(var(--rgb), var(--alpha));
+	width: var(--box-size);
+	height: var(--box-size);
+	background-color: var(--bg-color);
+}
+
+.example-transform-origin .box {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.box-reference {
+	--alpha: 0.3;
+	border: 2px solid rgb(var(--rgb));
+}
+
+.box-container {
+	position: relative;
+	width: var(--box-size);
+	height: var(--box-size);
+}
+
+.container {
+	padding: var(--pad);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container h2:first-child,
+.container p:first-child {
+	margin-top: 0;
+}
+
+.container p:last-child {
+	margin-bottom: 0;
+}
+
+.rotating-sticker-container {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 40px;
+}
+
+.rotating-sticker {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../images/sticker.png);
+	width: 100%;
+	height: 100%;
+}
+
+.message {
+	margin: 0;
+	line-height: 1;
+	font-family: var(--font-headings);
+	font-size: 3.25rem;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.animation-container {
+	margin: 40px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper main .jumbo-text {
+	font-size: 6em;
+	width: auto;
+	margin-bottom: 0;
+	color: #9116C0;
+	text-shadow: 3px 3px 5px black;
+	text-align: center;
+	pointer-events: none;
+}
+
+.fly-in-nav {
+	--height: 45px;
+	height: var(--height);
+	width: 80%;
+}
+
+.fly-in-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fly-in-nav li {
+	width: 19.6%;
+	margin-right: 0.05%;
+}
+
+.fly-in-nav li:last-child {
+	margin-right: 0;
+}
+
+.fly-in-nav a {
+	display: block;
+	line-height: var(--height);
+	border-radius: 1000px;
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #43ac6a;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	text-align: center;
+}
+
+.fly-in-nav a:focus,
+.fly-in-nav a:hover,
+.fly-in-nav a:active {
+	background-color: #368a55;
+}
+
+/* CSS Animations */
+
+/* 
+
+CSS animation Syntax 
+
+- In formation from the Mozilla Developer Network
+	- http;//developer.mozilla.org
+
+CSS Shorthand syntax:
+
+The shorthand properties are:
+
+animation:	[ animation name ]
+			[ animation duration ]
+			[ animation timing function - easing etc... ]
+			[ animation delay ]
+			[ animation iteration count ]
+			[ animation direction ]
+			[ animation fill mode ]  
+
+------------------------------
+
+- animation interation count - determines how many times the animation will run
+
+	- infinite
+		The animation will repeat forever.
+
+	- [ number... 1,2, 58 etc... ]
+		The number of times the animation should repeat; this is 1 by default. Negative values are invalid. You may specify non-integer values to play part of an animation cycle (for example 0.5 will play half of the animation cycle).
+
+------------------------------
+
+- animation direction determines which direction the animation will run
+	
+	- normal
+		The animation should play forward each cycle. In other words, each time the animation cycles, the animation will reset to the beginning state and start over again. This is the default animation direction setting.
+
+	- alternate
+		The animation should reverse direction each cycle. When playing in reverse, the animation steps are performed backward. In addition, timing functions are also reversed; for example, an ease-in animation is replaced with an ease-out animation when played in reverse. The count to determinate if it is an even or an odd iteration starts at one.
+
+	- reverse
+		The animation plays backward each cycle. Each time the animation cycles, the animation resets to the end state and start over again.
+
+	- alternate-reverse
+		The animation plays backward on the first play-through, then forward on the next, then continues to alternate. The count to determinate if it is an even or an odd iteration starts at one.
+
+-------------------------------
+
+- animation fill mode determines the starting or ending styles and or position of the element that is being animated
+
+	- none
+		The animation will not apply any styles to the target before or after it is executing.
+
+	- forwards
+		The target will retain the computed values set by the last keyframe encountered during execution. The last keyframe encountered depends of the value of animation-direction and animation-iteration-count:
+		
+			- See this page for more details:
+				- https://developer.mozilla.org/en-US/docs/CSS/animation-fill-mode
+
+	- backwards
+		The animation will apply the values defined in the first relevant keyframe as soon as it is applied to the target, and retain this during the animation-delay period. The first relevant keyframe depends of the value of of animation-direction:
+		
+		- See this page for more details:
+				- https://developer.mozilla.org/en-US/docs/CSS/animation-fill-mode
+
+	- both
+		The animation will follow the rules for both forwards and backwards, thus extending the animation properties in both directions.
+
+--------------------------------
+
+*/
+
+/*
+
+animation:	[ animation name ]
+			[ animation duration ]
+			[ animation timing function - easing etc... ]
+			[ animation delay ]
+			[ animation iteration count ]
+			[ animation direction ]
+			[ animation fill mode ]
+
+*/
+
+/* Animate Library */
+
+/* Animations from the animate.css library 
+   download the animate.css library CSS file from:
+
+   https://daneden.github.io/animate.css/
+
+*/
+
+.jumbo-text.paused {
+	animation-play-state: paused;
+}
+
+.jumbo-text.play {
+	animation-play-state: running;
+}
+
+
+
+
+/* footer styles */
+footer {
+	border-top: 1px dotted #ccc;
+	padding: var(--pad-half) var(--pad);
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (max-width: 480px){
+	
+	.btn-animation-in {
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+	
+	.wrapper main .jumbo-text {
+		font-size: 3.7em;
+	}
+	
+}

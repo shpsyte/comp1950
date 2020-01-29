@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: grey;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 900px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #3163D6;
+	color: white;
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	padding: 0 15px;
+}
+
+
+header nav ul 
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style: none;
+}
+
+header nav ul li{
+   margin: 12px;
+}
+
+
+
+header nav a {
+	color: white;
+	text-decoration: none;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
+	background-color: rgba(255,255,255,0.20)
+}
+
+
+main{
+	display: flex;
+	flex-direction: row;
+}
+
+main aside {
+	background-color: #D5F7A4;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main aside a {
+	color: black;
+}
+
+
+main section 
+{
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+}
+
+main section h2 {
+	margin-top: 0;
+}
+
+
+.profiles
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+.profile
+{
+	flex: 0 1 48%;
+	margin-bottom: 4%;
+	border: 1px dotted grey;
+	padding: 20px;
+	display: flex;
+
+
+ 
+}
+
+.profile:last-child {
+	margin: 0 auto;
+}
+
+
+.profile h3 {
+	margin-top: 0;
+}
+
+.profile p {
+	margin-bottom: 0;
+}
+
+footer {
+	background-color: #C0D7FB;
+	padding: 20px;
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (max-width: 650px){
+	
+   /* Change main content styles here */
+	
+}
+
+@media screen and (max-width: 600px){
+	
+  /* Change header styles here */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

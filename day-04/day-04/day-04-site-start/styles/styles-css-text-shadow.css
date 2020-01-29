@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Global Variables */
+:root {
+	
+	--brand-color: #4256f4;
+   
+   /* Grid Variables */
+   --one-col: 100%;	
+   --two-col: 49%;
+   --three-col: 32%;
+   --four-col: 23.5%;
+	
+   /* Layout Variables */
+   /* Calculations explained: 
+	  30 -> spacing in pixels
+	  16 -> 1rem = 16px
+	  To figure out the rem value of a 
+	  pixel value divide the px value
+	  by 16 (assuming the user has left
+	  the default size as 16 in the browser
+	  settings)
+   */
+   --space: calc(30 / 16);	
+   --pad: calc(var(--space) * 1rem);
+   --pad-half: calc(var(--pad) / 2);
+	
+   /* Font-Stacks	*/
+   --font-headings: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+   --font-body: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	
+}
+
+/* Resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Typography */
+body {
+	line-height: 1.4;
+	font-family: var(--font-body);
+}
+
+h1, h2, h3, nav a {
+	font-family: var(--font-headings);
+}
+
+/* General Styles */
+body {
+	margin: 0;
+	background-color: #2E2E2E;
+}
+
+.wrapper {
+	background-color: white;
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+header {
+	--color: white;
+	background-color: var(--brand-color);
+	color: var(--color);
+}
+
+header h1 {
+	margin: 0;
+	padding: var(--pad-half) var(--pad);
+}
+
+/* Main Styles */
+main {
+	padding: var(--pad);
+}
+
+main h1:first-child {
+	margin-top: 0;
+	width: 100%;
+}
+
+/* Text-Shadow Styles */
+.ts {
+	font-family: var(--font-headings);
+	font-size: 5rem;
+	margin: 20px;
+	line-height: 1;
+}
+
+.ts-basic {
+	
+}
+
+.ts-multiple {
+	
+}
+
+.ts-letterpress {
+	
+}
+
+
+/* footer styles */
+footer {
+	border-top: 1px dotted #ccc;
+	padding: var(--pad-half) var(--pad);
+}
+
+footer p {
+	margin: 0;
+}

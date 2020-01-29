@@ -1,0 +1,203 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img { 
+	max-width: 100%;
+	height: auto;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	background-color: grey;
+	margin: 0;
+}
+
+.wrapper {
+	max-width: 900px;
+	background-color: white;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+header {
+	background-color: #3163D6;
+	color: white;
+	height: 76px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 20px;
+}
+
+header h1 {
+	margin: 0;
+	line-height: 1;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+}
+
+header nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.3em;
+	line-height: 76px;
+	display: block;
+	padding: 0 20px;
+}
+
+header nav a:hover,
+header nav a:focus,
+header nav a:active {
+	background-color: rgba(255,255,255,0.20)
+}
+
+main {
+	display: flex;
+	flex: 1;
+}
+
+main aside {
+	flex: 1 1 23%;
+	background-color: #D5F7A4;
+	padding: 20px;
+}
+
+main aside h2 {
+	margin-top: 0;
+}
+
+main aside ul {
+	margin-top: 0;
+	padding-left: 17px;
+}
+
+main aside li {
+	line-height: 1.8;
+}
+
+main aside a {
+	color: black;
+}
+
+
+main section {
+	flex: 1 1 73%;
+	padding: 20px;
+}
+
+main section h2 {
+	margin-top: 0;
+}
+
+.profiles {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.profile {
+	flex: 0 1 48%;
+	margin-bottom: 4%;
+	border: 1px dotted grey;
+	padding: 20px;
+	display: flex;
+}
+
+.profile:last-child {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.profile h3 {
+	margin-top: 0;
+}
+
+.profile p {
+	margin-bottom: 0;
+}
+
+.profile img {
+	align-self: flex-start;
+	width: 35%;
+	margin-right: 5%;
+}
+
+footer {
+	background-color: #C0D7FB;
+	padding: 20px;
+}
+
+footer p {
+	margin: 0;
+}
+
+@media screen and (max-width: 650px){
+	
+	main {
+		flex-direction: column;
+	}
+	
+	aside {
+		order: 1;
+	}
+	
+	.profiles {
+		flex-direction: column;
+	}
+	
+}
+
+@media screen and (max-width: 600px){
+	
+	header {
+		flex-direction: column;
+		height: auto;
+		padding-top: 16px;
+		padding-left: 0;
+	}
+	
+	header nav {
+		margin-top: 10px;
+		width: 100%;
+	}
+	
+	header nav li {
+		flex: 1;
+	}
+	
+	header nav a {
+		line-height: 50px;
+		padding: 0;
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
