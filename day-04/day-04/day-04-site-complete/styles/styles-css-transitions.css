@@ -38,7 +38,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
-}
+} 
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -219,7 +219,7 @@ main h2:first-child {
 	transition: transform 1s cubic-bezier(1,-0.74,.06,1.54), 
 		        border-color 0.3s 1s ease;
 }
-
+ 
 .tr-multiple:hover {
 	transform: scale(1.5) rotate(20deg);
 	border-color: pink;
