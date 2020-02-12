@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Box Sizing Reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Images  - Max-Width Reset */
+
+
+body {
+    background-color: #6C6C6C;
+    margin: 0;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+}
+
+h1, h2, h3, h4, h5, nav a {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+.wrapper {
+    max-width: 800px;
+    padding: 0 30px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0 -30px;
+    background-color: #0B29CF;
+    color: white;
+    padding: 20px 30px;
+}
+
+header h1 {
+    margin: 0;
+    line-height: 1;
+}
+
+main {
+    padding: 30px 0;
+}
+
+main p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    border-top: 1px dotted #ccc;
+    padding: 30px;
+    margin: 0 -30px;
+}
+
+footer p {
+    margin: 0;
+    line-height: 1;
+}
+

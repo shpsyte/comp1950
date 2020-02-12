@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Images - SVG</title>
+<link rel="stylesheet" href="styles/styles-images-svg.css">
+</head>
+<body>
+<div class="wrapper">
+<header>
+<h1>Images - SVG</h1>
+</header>
+<main>
+    <article class="article-svg">
+        <h2>SVG - Image Element</h2>
+        <p>SVG's are scalable to any size.</p>
+        <img src="images/generic-logo.svg" alt="Logo">
+        <img src="images/generic-logo.svg" alt="Logo">
+        <img src="images/generic-logo.svg" alt="Logo">
+        <h2>SVG - Inline</h2>
+        <p>SVG code can be included directly in the HTML. This allows for manipulation of the SVG via CSS and/or JavaScript.</p>
+        <svg viewBox="0 0 302 307">
+            <defs>
+                <style>
+                    .cls-1{fill:#18aa53;}
+                    .cls-2{fill:#ff6440;}
+                </style>
+            </defs>
+            <title>rectangle-with-circle</title>
+            <g id="l-02">
+                <rect class="cls-1" width="183" height="307"/>
+            </g>
+            <g id="l-01">
+                <circle class="cls-2" cx="183.5" cy="188.5" r="118.5"/>
+            </g>
+        </svg>
+    </article>
+</main>
+<footer>
+    <p>&copy 2018 Michael Whyte</p>
+</footer>
+</div><!-- end wrapper -->
+</body>
+</html>

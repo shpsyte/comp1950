@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Web Site</title>
+<link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i|Pacifico" rel="stylesheet">
+<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<div class="wrapper">
+<header>
+  <a class="logo" href="#0"><!-- insert the logo.svg image here... --></a>	
+  <h1><a href="#0">Web Site</a></h1>
+  <button class="hamburger-menu">
+      <span class="hamburger-menu-content" tabindex="-1">
+	      <span class="sr-only">Menu</span>
+	      <span class="bar"></span>
+      </span><!-- end hamburger-menu-content -->
+  </button>
+</header>
+<nav>
+	<ul>
+		<li>
+			<a href="#0">Lorem</a>
+		</li>
+		<li>
+			<a href="#0">Veniam</a>
+		</li>
+		<li>
+			<a href="#0">Quibus</a>
+		</li>
+		<li>
+			<a href="#0">Possi</a>
+		</li>
+		<li>
+			<a href="#0">Dolor</a>
+		</li>
+		<li>
+			<a href="#0">Idium</a>
+		</li>
+		<li>
+			<a href="#0">Adium</a>
+		</li>
+	</ul>
+</nav>
+<main>
+  <div class="banner">
+    <!-- modifiy this image to include the srset and sizes attributes
+
+        *** The below sizes and srcset are pseudo code samples...
+            The are not written with the correct syntax...
+            You can not use the below code as is...
+            Use it as a guide to help you with putting in the 
+            correct and proper syntax
+    
+        sizes: (max-width: 960px) calc(100vw - 60px), 900px
+
+        srcset: vancouver-large - vancouver-medium - vancouver-small
+
+        Note: Remember to open this site in a new tab at a narrow 
+              width to see the images change...
+
+    -->
+    <img src="images/vancouver-large.jpg"
+         alt="Vancouver skyline">
+  </div><!-- end banner -->
+  <article>
+    <h1>Article Heading</h1>
+    
+      <!-- modify this image to use the picture element 
+    	
+        -> load a cropped version of this image when 
+           the screen size is less than 640px
+         
+        *** IMPORTANT ***    
+             
+        -> give the picture element a class of 
+           "featured-image" -> example -> <picture class="featured-image"></picture>   
+      -->
+      <img src="images/group.jpg" alt="Group of people">      	
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in tincidunt nisi, in faucibus enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse aliquet erat neque, laoreet condimentum enim volutpat sit amet. Donec ullamcorper quam ut convallis adipiscing. Sed vel libero id mauris ultrices sollicitudin id a mi. Mauris adipiscing non felis ultricies vehicula. Aliquam nec tincidunt tellus, non sollicitudin urna.</p>
+    
+    <p>Integer purus magna, rhoncus eget risus nec, venenatis ullamcorper lacus. Curabitur commodo aliquam libero, sed porta sem luctus eget. In enim lectus, tempor at lorem id, cursus aliquet nisl. Pellentesque consectetur mi urna, eu porta eros condimentum eget. Praesent consectetur nunc et augue egestas, et adipiscing sem bibendum. Ut id congue orci, sed porta ante. Aliquam eget lacus elit. Etiam accumsan nec purus eu gravida. Aenean erat risus, dapibus eget felis hendrerit, elementum dignissim nulla. Vestibulum rhoncus pretium urna vitae tristique.</p>
+    
+    <p>Praesent neque eros, vulputate vel lectus eu, interdum lacinia libero. Aenean et ultricies libero. Aenean iaculis, dui in posuere vestibulum, massa felis tincidunt magna, eget lobortis libero libero vitae ligula. Ut sem ligula, pellentesque ac tincidunt posuere, auctor at orci. Etiam sit amet ante et lectus ultrices blandit. Phasellus eu felis pharetra felis interdum suscipit. Pellentesque id nisi velit.</p>
+    
+    <h2>Sub Heading</h2>
+    
+    <p>Maecenas ultricies felis at rutrum accumsan. Nullam euismod dui in sapien vehicula rhoncus. Phasellus gravida dui quis viverra accumsan. Curabitur vulputate ut tortor sed bibendum. Etiam dictum erat accumsan hendrerit pharetra. Maecenas lacus elit, ullamcorper nec diam vulputate, pellentesque tempus eros. Vivamus sagittis feugiat risus, a laoreet nulla iaculis et.</p>
+    
+    <p>Sed quis lacus interdum, condimentum mi luctus, dictum metus. Maecenas id tempor nulla. Nam dapibus, dui nec euismod varius, elit eros venenatis ante, ut vestibulum enim erat nec turpis. Sed lobortis nec lorem et feugiat. Donec sem quam, eleifend eu tincidunt facilisis, dapibus eget ligula. Quisque tempus felis non nibh porta, non sollicitudin tortor fringilla. Pellentesque sed nibh dictum, sollicitudin libero et, auctor diam. Fusce lacinia dolor ac odio ultrices, eget aliquam mi ullamcorper. Vestibulum id lectus sit amet lorem pharetra ullamcorper. Cras semper feugiat convallis. Mauris et rhoncus ante.</p>
+  </article>
+</main>
+<footer>
+    <p>&copy; 2018 Michael Whyte</p>
+    <p>All content for use on this web page only</p>
+</footer>
+</div><!-- end wrapper -->
+<script src="scripts/menu.js"></script>
+</body>
+</html>

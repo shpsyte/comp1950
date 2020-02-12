@@ -248,7 +248,7 @@ section > div > div:nth-child(5):hover {
 
 /* Article styles */
 
-main section article {
+main  section  article {
   display: flex;
   flex-direction: column;
   align-items: center;

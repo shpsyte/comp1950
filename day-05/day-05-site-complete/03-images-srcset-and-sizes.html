@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Images - Retina</title>
+<link rel="stylesheet" href="styles/styles-images-srcset-and-sizes.css">
+</head>
+<body>
+<div class="wrapper">
+<header>
+<h1>Images - srcset and sizes</h1>
+</header>
+<main>
+    <article>
+        <h2>srcset &amp; sizes - Example 1</h2>
+        <div class="banner">
+            <img src="images/city-large.jpg" 
+                 alt="Vancouver"
+                 srcset="images/city-retina.jpg 2400w,
+                         images/city-large.jpg 1200w,
+                         images/city-medium.jpg 800w,
+                         images/city-small.jpg 400w"
+                 sizes="(max-width: 1260px) calc(100vw - 60px),
+                        1200px">
+        </div>        
+    </article>
+    <article>
+        <h2>srcset &amp; sizes - Example 2</h2>
+        <div class="row">
+            <div class="col col-01">
+                <img src="images/flower-01-large.jpg"  
+                     alt="Flower"
+                     srcset="images/flower-01-retina.jpg 800w,
+                             images/flower-01-large.jpg 400w,
+                             images/flower-01-medium.jpg 300w,
+                             images/flower-01-small.jpg 150w"
+                     sizes="(max-width: 460px) calc(100vw - 60px),
+                            (max-width: 1260px) calc(30vw - 60px),
+                            400px">
+            </div>
+            <div class="col col-02">
+                <img src="images/flower-02-large.jpg"  
+                     alt="Flower"
+                     srcset="images/flower-02-retina.jpg 800w,
+                             images/flower-02-large.jpg 400w,
+                             images/flower-02-medium.jpg 300w,
+                             images/flower-02-small.jpg 150w"
+                     sizes="(max-width: 460px) calc(100vw - 60px),
+                            (max-width: 1260px) calc(30vw - 60px),
+                            400px">
+            </div>
+            <div class="col col-03">
+                <img src="images/flower-03-large.jpg"  
+                     alt="Flower"
+                     srcset="images/flower-03-retina.jpg 800w,
+                             images/flower-03-large.jpg 400w,
+                             images/flower-03-medium.jpg 300w,
+                             images/flower-03-small.jpg 150w"
+                     sizes="(max-width: 460px) calc(100vw - 60px),
+                            (max-width: 1260px) calc(30vw - 60px),
+                            400px">
+            </div>           
+        </div>
+    </article>
+</main>
+<footer>
+    <p>&copy 2018 Michael Whyte</p>
+</footer>
+</div><!-- end wrapper -->
+</body>
+</html>
