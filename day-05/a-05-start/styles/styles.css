@@ -8,53 +8,131 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-
-
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* End CSS Reset */
@@ -62,10 +140,8 @@ table {
 /* Set Main tag to display block */
 
 main {
-	display: block;	
+  display: block;
 }
-
-
 
 /* End Set Main tag to display block */
 
@@ -73,7 +149,9 @@ main {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -82,8 +160,8 @@ html {
 /* Responsive Image Reset */
 
 img {
-	max-width: 100%;
-	height: auto;	
+  max-width: 100%;
+  height: auto;
 }
 
 /* End Responsive Image Reset */
@@ -91,101 +169,109 @@ img {
 /* Utility classes */
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* End Utility classes */
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Merriweather', serif;
-	font-weight: 700;
-	font-style: italic;
-	margin: 16px 0;	
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+  margin: 16px 0;
 }
 
 h1 {
-	font-size: 24px;	
+  font-size: 24px;
 }
 
 h2 {
-	font-size: 20px;	
+  font-size: 20px;
 }
 
 header h1 {
-	margin: 0;
-	margin-right: auto;
-	font-size: 42px;
-	font-weight: 400;
-	margin-left: 10px;
+  margin: 0;
+  margin-right: auto;
+  font-size: 42px;
+  font-weight: 400;
+  margin-left: 10px;
 }
 
 header h1 a {
-	font-family: 'Pacifico', cursive;	
-	color: #9E0002;
-	text-decoration: none;		
+  font-family: "Pacifico", cursive;
+  color: #9e0002;
+  text-decoration: none;
 }
 
 .col h2 {
-	margin: 0 0 20px;
-	text-align: center;	
+  margin: 0 0 20px;
+  text-align: center;
 }
 
-p, li, a, b {
-	font-family: 'Merriweather', serif;
-	line-height: 1.5;
+p,
+li,
+a,
+b {
+  font-family: "Merriweather", serif;
+  line-height: 1.5;
 }
 
 p {
-	margin: 14px 0;	
+  margin: 14px 0;
 }
 
 b {
-	font-weight: bold;	
+  font-weight: bold;
 }
 
 html,
 body {
-	height: 100%;	
+  height: 100%;
 }
 
 body {
-	background-size: cover;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-    /* If you paid attention to the instructions then you will
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* If you paid attention to the instructions then you will
        know to turn off this bakcground image at screen sizes below about 1024px...
        ...Use a media querie to do this...
     */
-	background-image: url(../images/bg.jpg);
+  /* background-image: url(../images/bg.jpg); */
 }
 
 .wrapper {
-	max-width: 960px;
-	padding: 0 30px;
-	margin: 0 auto;
-	background-color: white;	
+  max-width: 960px;
+  padding: 0 30px;
+  margin: 0 auto;
+  background-color: white;
 }
 
 header {
-	padding: 12px 0;
-	height: 90px;
-    display: flex;
+  padding: 12px 0;
+  height: 90px;
+  display: flex;
 }
 
 .logo {
-	width: 75px;
-} 
+  width: 75px;
+}
 
 .logo img {
-	display: block;	
+  display: block;
 }
 
 .hamburger-menu {
@@ -193,23 +279,23 @@ header {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  align-self: center; 
+  align-self: center;
   float: right;
   display: none;
 }
 
 .hamburger-menu:focus,
 .hamburger-menu-content:focus {
-    outline: none;
+  outline: none;
 }
-    
+
 .hamburger-menu:focus .hamburger-menu-content {
-    outline: 5px solid #7683C9;
+  outline: 5px solid #7683c9;
 }
 
 .hamburger-menu-content {
-	display: block;
-    height: 24px;
+  display: block;
+  height: 24px;
 }
 
 .bar,
@@ -217,7 +303,8 @@ header {
 .bar:before {
   width: 40px;
   height: 4px;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 .bar {
   position: relative;
@@ -226,9 +313,11 @@ header {
   background: #111111;
   transition: all 0ms 300ms;
   border-radius: 10px;
-  display: block; }
-  .bar.animate {
-    background: rgba(17, 17, 17, 0); }
+  display: block;
+}
+.bar.animate {
+  background: rgba(17, 17, 17, 0);
+}
 
 .bar:before {
   content: "";
@@ -236,7 +325,9 @@ header {
   left: 0;
   bottom: 10px;
   background: #111111;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 .bar:after {
   content: "";
@@ -244,134 +335,185 @@ header {
   left: 0;
   top: 10px;
   background: #111111;
-  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 .bar.animate:after {
   top: 0;
   transform: rotate(45deg);
-  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
-  opacity: 1; }
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  opacity: 1;
+}
 
 .bar.animate:before {
   bottom: 0;
   transform: rotate(-45deg);
-  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
 
 .hamburger-menu .bar.animate {
-  background: transparent !important; }
+  background: transparent !important;
+}
 
-.hamburger-menu .bar.animate:before, .hamburger-menu .bar.animate:after {
-  background: #111111; }
-
+.hamburger-menu .bar.animate:before,
+.hamburger-menu .bar.animate:after {
+  background: #111111;
+}
 
 nav {
-	height: 45px;
-	margin-bottom: 1em;
+  height: 45px;
+  margin-bottom: 1em;
 }
 
 nav ul {
-	display: flex;
+  display: flex;
 }
 
 nav li {
-	flex: 1;
+  flex: 1;
 }
 
 nav a {
-	display: block;
-	line-height: 43px;
-	color: black;
-	text-decoration: none;
-	text-align: center;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
+  display: block;
+  line-height: 43px;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid black;
 }
 
 nav a:focus,
 nav a:hover,
 nav a:active {
-    background-color: #808080;
-    color: white;
-    outline: none;
-}
-
-nav li:last-child a {
-	border-right: 1px solid black;
+  background-color: #808080;
+  color: white;
+  outline: none;
 }
 
 main {
-	margin-bottom: 30px;	
+  margin-bottom: 30px;
 }
 
 article {
-	margin-top: 20px;
+  margin-top: 20px;
 }
 
 article h1 {
-	margin: 0 0 20px;
-	font-size: 30px;	
+  margin: 0 0 20px;
+  font-size: 30px;
 }
 
 article h2 {
-	font-size: 24px;
-	margin-top: 26px;	
+  font-size: 24px;
+  margin-top: 26px;
 }
 
 .banner img {
-	display: block;	
+  display: block;
 }
 
 .featured-image {
-	width: 39%;
-	float: right;
-	margin-left: 20px;	
+  width: 39%;
+  float: right;
+  margin-left: 20px;
 }
 
 footer {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 20px 30px;
-	border-top: 1px dotted #ccc;	
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  border-top: 1px dotted #ccc;
+}
+
+.show .btn-menu .bar {
+  background-color: transparent;
+}
+
+.show .btn-menu .bar:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.show .btn-menu .bar:after {
+  top: 0;
+  transform: rotate(-45deg);
 }
 
 @media only screen and (max-width: 600px) {
-	
-	.hamburger-menu {
-		display: block;
-	}
-	
-    /* Put your repsonsive menu system styles here...  */
-	
+  .hamburger-menu {
+    display: block;
+  }
+
+  nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .show nav {
+    height: 315px;
+
+    animation: flip 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    background: rgba(0, 0, 0, 0.233);
+  }
+  @keyframes flip {
+    0% {
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 0, 720deg);
+    }
+  }
+
+  @keyframes flip-out {
+    0% {
+      transform: rotate3d(1, 1, 0, 0deg);
+    }
+    100% {
+      transform: rotate3d(1, 1, 0, 720deg);
+    }
+  }
+
+  .show nav ul {
+    flex-direction: column;
+  }
+
+  .show nav.activated {
+    transition: height 0.3s ease;
+  }
+
+  /* Put your repsonsive menu system styles here...  */
 }
 
 @media only screen and (max-width: 450px) {
+  header {
+    height: 70px;
+  }
 
-	header {
-		height: 70px;
-	}
+  .logo {
+    width: 53px;
+  }
 
-	.logo {
-		width: 53px;
-	}
+  header h1 {
+    line-height: 46px;
+    font-size: 25px;
+  }
+}
 
-	header h1 {
-		line-height: 46px;
-		font-size: 25px;
-	}
-
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url(../images/bg.jpg);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    /* Hey...Another reminder...Remember to turn off the
+  /* Hey...Another reminder...Remember to turn off the
        background image on the body at screen sizes below 
-       1024px...do that here... */
+			 1024px...do that here... */
+  body {
+    background-image: none;
+  }
 }
-
-
-
-
-
-
-
-
