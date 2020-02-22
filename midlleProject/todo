@@ -1,0 +1,28 @@
+ Project:
+  ✔ Setup Folders @done(20-02-22 09:43)
+  ☐ 1. Make up a business (fictional) or choose an existing business to build a brochure web site for
+    ✔ Choose the bussiness @done(20-02-22 11:32)
+    ✔ Create a mookup @done(20-02-22 11:32)
+  ☐ 2. Develop a 2 or more-page web site using HTML / CSS and JavaScript (Optional).
+ The web site must meet the following technical requirements:
+  ☐ a. Use HTML5 semantic tags
+    ☐ i. Don’t just use divs everywhere, use the header tag for the web site header, the
+    ☐ footer tag for the web site footer, etc.
+  ☐ b. Use an external CSS style sheet containing custom CSS styles linked to every page on the web site.
+  ☐ c. The web site must be fully responsive. The web site should work on screen sizes from 320px to 1920px wide. Sites that are unusable at certain screen widths and that do not reflow content in any way from a wide desktop screen to a mobile screen will receive lower marks
+  ☐ d. The web site must contain a fully responsive navigation bar with at least 3 items in it.
+    ☐ i. The user should be able to navigate to any page of the web site from any page in the website
+    ☐ ii. The navigation bar should be fully functional at all screen sizes between 320px and 1920px
+    ☐ iii. If your site only contains two pages, then one of the navigation links can link to nowhere (#0).
+  ☐ e. The HTML and CSS code must be valid
+    ☐ i. To validate your HTML code visit:  https://validator.w3.org/
+    ☐ ii. To validate your CSS code visit:  https://jigsaw.w3.org/css-validator/
+  ☐ f. All HTML / CSS / JS / and images and related media files must have web safe filenames
+    ☐ i. All filenames should be lowercased
+    ☐ ii. All filename should contain only alpha-numeric characters and/or “_” or “-“ characters
+  ☐ g. Web site files should be properly organized
+    ☐ i. All image files inside an “images” folder
+    ☐ ii. CSS files in a “styles” folder
+    ☐ iii. JS files in a “scripts” folder
+  ☐ h. The home page of your web site should have the file name of “index.html”
+
