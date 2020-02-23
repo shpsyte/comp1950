@@ -37,6 +37,14 @@ header {
   height: 90px;
 }
 
+header .container {
+  background-color: #ff4c2e;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 header a {
   color: white;
 }
@@ -235,7 +243,7 @@ footer a:focus {
   header nav a {
     display: block;
     line-height: 40px;
-    text-align: center;
+    text-align: center; 
   }
 
   .show header {

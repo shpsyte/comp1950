@@ -31,6 +31,8 @@ button {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/* header style */
 header#header {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.151);
@@ -78,8 +80,11 @@ header#header nav ul li {
 header a {
   text-decoration: none;
   color: #66a7d3;
-  padding: 0 15px;
+
   text-transform: capitalize;
+}
+header nav ul li a {
+  padding: 0 15px;
 }
 
 header nav a:hover,
@@ -107,6 +112,10 @@ header#header .side img {
   padding: 15px;
 }
 
+.active {
+  font-weight: 600;
+}
+
 input:hover {
   border: 1px solid #89c3d8 !important;
 }
@@ -117,13 +126,8 @@ main .container {
 
 /* hero banner styles */
 
-.container div {
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.151); */
-}
-
 .hero {
   padding: 30px 0 50px 0;
-  /* background-color: rgb(255, 255, 255); */
 }
 
 .hero h2 {
@@ -183,6 +187,9 @@ main .container {
 }
 
 /* feature video css */
+iframe {
+  border: 0;
+}
 .feature-video {
   display: flex;
   align-items: center;
@@ -201,14 +208,29 @@ main .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
-  background: #fff;
   padding: 10px 0 5px 0;
   margin-bottom: 30px;
 }
 
 .posts div {
   margin: 15px;
+  background: #fff;
+  width: 300px;
+  height: 300px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.151);
+  flex-grow: 1;
+}
+
+.post img {
+  height: 150px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.151);
+}
+
+.post {
+  text-align: center;
 }
 
 /* footer style*/
@@ -216,8 +238,11 @@ main .container {
 footer {
   background: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.151);
-
   height: 70px;
+
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 footer .container {
@@ -249,12 +274,130 @@ footer ul li:nth-child(2) {
   padding: 15px;
 }
 
+/* projects styles*/
+.about {
+  display: flex;
+}
+
+.about .perfil,
+.about .resume {
+  padding: 30px 15px 15px 0px;
+}
+.perfil {
+  width: 660px;
+}
+
+.skill ul {
+  color: #3bb9e3;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  background: #fff;
+  margin-bottom: 15px;
+  border: 1px solid #21252925;
+}
+
+.project .logo {
+  width: 250px;
+
+  border-right: 1px solid #21252925;
+}
+
+.project .resume {
+  flex: auto;
+  padding: 0 15px;
+}
+
+.btn-menu {
+  display: none;
+}
+
 @media screen and (max-width: 740px) {
-  .posts {
-    flex-wrap: wrap;
+  .skill ul {
+    padding: 50px;
+    font-size: 1em;
+  }
+
+  .btn-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+
+    text-transform: uppercase;
+    line-height: 90px;
+  }
+
+  nav ul {
+    background: #000;
+    flex-direction: column;
+    margin-top: 200px !important;
   }
 
   .post {
+    width: 300px;
+    flex-grow: 0;
+  }
+
+  .btn-menu {
+    display: block;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .btn-menu .button-content {
+    display: block;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .btn-menu .text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  .btn-menu:focus {
+    outline: none;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    left: 0;
     width: 100%;
+    margin: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+
+    background: #363c41;
+  }
+
+  .show nav {
+    display: block;
+  }
+
+  nav ul li a {
+    border-right: none;
+    color: white;
+    width: 100%;
+    border: 1px solid #fff;
+    border-bottom: none;
+    line-height: 41px;
+    text-align: left;
   }
 }
