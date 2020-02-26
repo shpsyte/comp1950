@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* Resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Body Layout */
+body {
+ /* Make the body a grid container here... */
+}
+
+/* Header Layout */
+/* Header layout is a single row...Flexbox
+   is a better solution here than grid... */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+}
+
+header h1 {
+    margin: 0 0 0 20px;
+    color: white;
+    line-height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Banner */
+.banner {
+    height: 300px;
+    padding: 30px;
+    background-image: url("../images/cat-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-big-text {
+    font-size: 140px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.banner-text {
+    max-width: 900px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+/* Portfolio Items Layout - Cards */
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    line-height: 1;
+    margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 700px){
+
+    .banner-big-text {
+        font-size: 20vw;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+    
+    .banner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .banner-big-text {
+        font-size: 3.6em;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 20px;
+        line-height: 1;
+    }
+
+    .banner-text {
+        font-size: 1.1em;
+        margin: 0;
+    }
+
+    /* Mobile Navigation Styles */
+
+    /* Hamburger Styles */
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: white;
+        line-height: 1;
+        font-size: 1.9em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.3s ease;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid #333;
+        border-top: 1px solid #afafaf;
+    }
+
+    nav li:last-child a {
+        border-bottom: 1px solid #afafaf;
+    }
+
+    .show nav {
+        height: 126px;
+    }
+
+}
+

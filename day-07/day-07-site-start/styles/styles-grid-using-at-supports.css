@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	background-color: grey;
+	margin: 0;
+}
+
+h1, h2, h3 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 0;
+}
+
+/* Colours for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:#34495e;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#e74c3c;}
+.box8 { background:#bdc3c7;}
+.box9 { background:#2ecc71;}
+.box10 { background:#16a085;}
+
+header {
+	background-color: #1abc9c;
+	padding: 20px;
+}
+
+header h1 {
+	margin-bottom: 0;
+}
+
+nav {
+	background-color: #3498db;
+}
+
+aside:nth-of-type(1) {
+	background-color: #9b59b6;
+	padding: 20px;
+}
+
+main {
+	background-color: #34495e;
+	padding: 20px;
+}
+
+aside:nth-of-type(2) {
+	background-color: #f1c40f;
+	padding: 20px;
+}
+
+footer {
+	background-color: #e67e22;
+	padding: 20px;
+}
+
+.wrapper {
+	background-color: white;
+	margin: 0 auto;
+}
+
+/* Legacy layout code for older browsers */
+.wrapper {
+	width: 900px;
+}
+
+aside {
+	display: table-cell;
+	width: 20%;
+}
+
+main {
+	display: table-cell;
+	width: 60%;	
+}
+
+/* End legacy layout code */
+
+/* Grid Styles */
+
+@supports (grid-area: auto) {
+	
+	.wrapper {
+		/* width: auto; */
+		min-height: 100vh;
+		width: auto;
+		max-width: 900px;
+		display: grid;
+		grid-template-columns: 1fr 3fr 1fr;
+		grid-template-rows: repeat(2, minmax(45px, auto)) 1fr minmax(45px, auto);
+		grid-template-areas:
+			"header   header header"
+			"nav      nav    nav"
+			"sidebar1 main   sidebar2"
+			"footer   footer footer";
+	}
+
+	header {
+		grid-area: header;
+	}
+
+	nav {
+		grid-area: nav;
+	}
+
+	main,
+	aside {
+		width: 100%;
+		display: block;
+	}
+
+	aside:nth-of-type(1) {
+		grid-area: sidebar1;
+	}
+
+	main {
+		grid-area: main;
+	}
+
+	aside:nth-of-type(2) {
+		grid-area: sidebar2;
+	}
+
+	footer {
+		grid-area: footer;
+	}
+	
+}
+
+/* End Grid Styles */
+
+/* Nav Styles - Use flex box for single row layout */
+nav ul {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	flex: 1;
+}
+
+nav a {
+	text-align: center;
+	display: block;
+	color: white;
+	text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 50px;
+	font-weight: bold;
+}
+
+nav a:focus,
+nav a:hover,
+nav a:active {
+	background-color: #7FBEE8;
+}
+
+/* End Navigation styles */
+
+/* Media Queries */
+
+/* Change layout to a mobile layout */
+
+@supports (grid-area: auto) {
+	
+	@media screen and (max-width: 640px) {
+		.wrapper {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(3, minmax(45px, auto)) 1fr minmax(45px, auto);
+			grid-template-areas:
+				"nav      nav"
+				"header   header"
+				"sidebar2 sidebar1"
+				"main     main"
+				"footer   footer";
+		}
+	}	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

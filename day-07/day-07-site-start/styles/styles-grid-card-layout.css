@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	background-color: grey;
+}
+
+h1, h2, h3 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Colours for each box */
+.box1 { background:#1abc9c;}
+.box2 { background:#3498db;}
+.box3 { background:#9b59b6;}
+.box4 { background:#34495e;}
+.box5 { background:#f1c40f;}
+.box6 { background:#e67e22;}
+.box7 { background:#e74c3c;}
+.box8 { background:#bdc3c7;}
+.box9 { background:#2ecc71;}
+.box10 { background:#16a085;}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	background-color: white;
+	padding: 8px;
+}
+
+.box {
+	padding: 8px;
+}
+
+/* Grid and Flex styles */
+
+
+/* Use grid-column and grid-row to tell grid where to place items
+   on the grid */
+
+
+/* Media Queries - Mobile Layout */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

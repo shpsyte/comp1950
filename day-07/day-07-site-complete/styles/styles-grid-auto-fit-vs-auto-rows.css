@@ -1,0 +1,39 @@
+.wrapper {
+  display: grid;
+}
+
+.fill {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.fit {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper {
+  border: 1px solid blue;
+  padding: 10px;
+}
+.wrapper > div { 
+  border: 1px solid blue; 
+  border-radius: 4px; 
+  padding: 5px 10px; 
+  background-color: rgba(0,0,255,.1)
+}
+

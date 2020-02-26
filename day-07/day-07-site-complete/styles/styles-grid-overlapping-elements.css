@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: white;
+	background-color: grey;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.wrapper {
+	background-color: white;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+
+/* Grid styles */
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(20, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+}
+
+.box1 {
+	grid-column: 4 / 12;
+	grid-row: 2 / 6;
+}
+
+.box2 {
+	grid-column: 10 / 18;
+	grid-row: 4 / 8;
+	z-index: 100;
+}
+
+.box3 {
+	grid-column: 5 / 13;
+	grid-row: 7 / 11;
+}
+
