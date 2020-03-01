@@ -161,14 +161,6 @@ footer a {
   }
 }
 
-.content-title {
-  text-align: center;
-}
-
-.text p {
-  padding: 0 30px;
-}
-
 /* Grid monipoly style*/
 .box {
   border: 2px solid black;
@@ -177,6 +169,17 @@ footer a {
   align-items: center;
   font-size: calc(2vw + 8px);
   text-align: center;
+}
+
+/* game board style*/
+
+.section-02 {
+  background: rgb(99, 98, 98);
+  padding: 30px;
+}
+
+.content-02 {
+  background: #fff;
 }
 
 .game-board {
@@ -275,7 +278,19 @@ footer a {
   color: #fff;
 }
 
-/* Section style*/
+/* All Section style*/
+
+section .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 15px 30px;
+}
+
+.content-title {
+  grid-column: 1;
+  text-align: center;
+}
+
 .section-04 article h1 {
   text-align: center;
 }
@@ -284,13 +299,67 @@ footer a {
 }
 
 .article-01 {
-  background: rgb(70, 70, 192);
+  background: rgb(107, 107, 230);
   color: #fff;
   padding: 20px;
 }
 
 .article-02 {
-  background: rgb(207, 107, 107);
+  background: rgb(238, 110, 110);
   color: #fff;
   padding: 20px;
+}
+
+/* Gallery Style */
+.gallery {
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+
+.gallery-item {
+  position: relative;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* tablet */
+@media (min-width: 768px) {
+  .section-04 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/* desktop */
+@media (min-width: 1600px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
 }
