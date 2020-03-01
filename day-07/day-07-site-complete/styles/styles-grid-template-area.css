@@ -44,7 +44,7 @@ html {
 	   to leave one section of the grid blank */
 	grid-template-areas:
 		"one five three"
-		"two two four"
+		"two two four" 
 		"two two four"
 		"two two six";
 }

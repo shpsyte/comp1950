@@ -5,166 +5,292 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	display: block;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 body {
-	margin: 0;
-	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+  margin: 0;
+  font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 
-h1, h2, h3, nav a {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+h1,
+h2,
+h3,
+nav a {
+  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro",
+    "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 
 header {
-	background-color: black;
-	color: white;
-	display: flex;
-	justify-content: space-between;
-	height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
 }
 
 header h1 {
-	margin: 0;
-	line-height: 70px;	
-	margin-left: 1.2rem;
+  margin: 0;
+  line-height: 70px;
+  margin-left: 1.2rem;
 }
 
 .hamburger {
-	display: none;
+  display: none;
 }
 
 nav ul {
-	display: flex;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
-	display: block;
-	line-height: 70px;
-	padding: 0 1.2rem;
-	color: white;
-	font-size: 1.2em;
-	text-decoration: none;
+  display: block;
+  line-height: 70px;
+  padding: 0 1.2rem;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus,
 nav a:active {
-	background-color: rgba(255,255,255,0.2);
-	outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  outline: none;
 }
 
-
-
 footer {
-	background-color: black;
-	color: white;
-	text-align: center;
-	padding: 1.3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1.3rem;
 }
 
 footer a {
-	color: white;
+  color: white;
 }
 
-@media only screen and (max-width: 580px){
-
-	/* Switch Multi-Column Layout to
+@media only screen and (max-width: 580px) {
+  /* Switch Multi-Column Layout to
 	   single column layout here */
-	
 
-	/* Mobile Navigation Styles */
+  /* Mobile Navigation Styles */
 
-    /* Hamburger Styles */
-    .hamburger {
-        display: block;
-        border: none;
-        background-color: transparent;
-        padding: 0;
-        margin: 0;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
+  /* Hamburger Styles */
+  .hamburger {
+    display: block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
 
-    .hamburger-icon {
-        color: white;
-        line-height: 1;
-        font-size: 2.4em;
-    }
+  .hamburger-icon {
+    color: white;
+    line-height: 1;
+    font-size: 2.4em;
+  }
 
-    .hamburger:focus,
-    .hamburger-icon:focus {
-        outline: none;
-    }
-    
-    .hamburger:focus .hamburger-icon {
-        outline: 5px solid #69c1db;
-    }
+  .hamburger:focus,
+  .hamburger-icon:focus {
+    outline: none;
+  }
 
-    .hamburger-text {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0,0,0,0);
-        border: 0;
-    }
+  .hamburger:focus .hamburger-icon {
+    outline: 5px solid #69c1db;
+  }
 
-    header {
-        flex-wrap: wrap;
-		align-items: center;
-		height: auto;
-    }
+  .hamburger-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 
-    nav {
-        height: 0;
-        overflow: hidden;
-        width: 100%;
-        transition: height 0.3s ease;
-    }
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+  }
 
-    nav ul {
-        display: block;
-    }
+  nav {
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.3s ease;
+  }
 
-    nav a {
-        line-height: 40px;
-        border-bottom: 1px solid black;
-        border-top: 1px solid #afafaf;
-    }
+  nav ul {
+    display: block;
+  }
 
-    nav li:last-child a {
-        border-bottom: 1px solid #afafaf;
-    }
+  nav a {
+    line-height: 40px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid #afafaf;
+  }
 
-    .show nav {
-        height: 126px;
-    }
+  nav li:last-child a {
+    border-bottom: 1px solid #afafaf;
+  }
 
+  .show nav {
+    height: 126px;
+  }
 }
 
+.content-title {
+  text-align: center;
+}
 
+.text p {
+  padding: 0 30px;
+}
 
+/* Grid monipoly style*/
+.box {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(2vw + 8px);
+  text-align: center;
+}
 
+.game-board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(5, 10vw);
+  grid-template-rows: repeat(5, 10vw);
+  grid-gap: 20px 20px;
+  grid-template-areas:
+    "one       two       three      four     five"
+    "sixteen   seventeen seventeen  eighteen six"
+    "fifteen   seventeen seventeen  eighteen seven"
+    "fourteen  nineteen  nineteen   nineteen eight"
+    "thirteen  twelve    eleven     ten      nine";
+}
 
+.box-01 {
+  grid-area: one;
+}
 
+.box-02 {
+  grid-area: two;
+}
 
+.box-03 {
+  grid-area: three;
+}
 
+.box-04 {
+  grid-area: four;
+}
 
+.box-05 {
+  grid-area: five;
+}
+
+.box-06 {
+  grid-area: six;
+}
+
+.box-07 {
+  grid-area: seven;
+}
+
+.box-08 {
+  grid-area: eight;
+}
+
+.box-09 {
+  grid-area: nine;
+}
+.box-10 {
+  grid-area: ten;
+}
+
+.box-11 {
+  grid-area: eleven;
+}
+
+.box-12 {
+  grid-area: twelve;
+}
+
+.box-13 {
+  grid-area: thirteen;
+}
+
+.box-14 {
+  grid-area: fourteen;
+}
+
+.box-15 {
+  grid-area: fifteen;
+}
+
+.box-16 {
+  grid-area: sixteen;
+}
+
+.box-17 {
+  grid-area: seventeen;
+  background: rgb(164, 164, 228);
+  color: #fff;
+}
+
+.box-18 {
+  grid-area: eighteen;
+  background: rgb(255, 172, 46);
+  color: #fff;
+}
+
+.box-19 {
+  grid-area: nineteen;
+  background: rgb(77, 156, 24);
+  color: #fff;
+}
+
+/* Section style*/
+.section-04 article h1 {
+  text-align: center;
+}
+.section-04 article p {
+  padding: 0 30px;
+}
+
+.article-01 {
+  background: rgb(70, 70, 192);
+  color: #fff;
+  padding: 20px;
+}
+
+.article-02 {
+  background: rgb(207, 107, 107);
+  color: #fff;
+  padding: 20px;
+}
