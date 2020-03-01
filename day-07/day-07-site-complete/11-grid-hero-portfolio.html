@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- This code modified from code originating from this blog post: 
+        https://medium.com/samsung-internet-dev/common-responsive-layouts-with-css-grid-and-some-without-245a862f48df
+    -->
+    <title>CSS Grid - Hero with Portfolio Items</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles-grid-hero-porfolio.css">
+</head>
+<body>
+<header>
+    <h1 class="heading">Gridtaculous</h1>
+    <button class="hamburger">
+        <div class="hamburger-content">
+            <span class="hamburger-icon" tabindex="-1">
+                    &#9776;
+            </span>
+            <span class="hamburger-text">
+                Menu
+            </span>
+        </div>
+    </button>
+    <nav>
+        <ul>
+            <li><a href="#0">Ipsum</a></li>
+            <li><a href="#0">Dolor</a></li>
+            <li><a href="#0">Amet</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="banner">
+        <p class="banner-big-text">Hello</p>
+        <p class="banner-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae semper quam. Praesent lobortis tellus quis erat condimentum, a bibendum tortor volutpat.</p>
+    </section>
+    <section class="cards-container">
+        <article class="card">
+            <img class="card-image" src="./images/cat-01.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+        <article class="card">
+            <img class="card-image" src="./images/cat-02.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+        <article class="card">
+            <img class="card-image" src="./images/cat-03.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+        <article class="card">
+            <img class="card-image" src="./images/cat-04.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+        <article class="card">
+            <img class="card-image" src="./images/cat-05.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+        <article class="card">
+            <img class="card-image" src="./images/cat-06.jpg" alt="Cat" />
+            <h1 class="card-title">Title of article</h1>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2018 Gridtaculous</p>
+</footer>
+<script src="./scripts/show-nav.js"></script>
+</body>
+</html>

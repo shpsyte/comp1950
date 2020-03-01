@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/* Resets */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Body Layout */
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* Header Layout */
+/* Header layout is a single row...Flexbox
+   is a better solution here than grid... */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:#C62828;
+}
+
+header h1 {
+    margin: 0 0 0 20px;
+    color: white;
+    line-height: 60px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    display: block;
+    line-height: 60px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Banner */
+.banner {
+    height: 300px;
+    padding: 30px;
+    background-image: url("../images/cat-hero.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-big-text {
+    font-size: 140px;
+    font-weight: bold;
+    margin-right: 60px;
+}
+
+.banner-text {
+    max-width: 900px;
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+/* Gallery Layout - Cards */
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.info-box-01 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.info-box-02 {
+    grid-column: span 2;
+}
+
+.figure-01 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.figure-06 {
+    grid-column: span 2;
+}
+
+.figure-07,
+.figure-08 {
+    grid-column: span 3;
+}
+
+figure {
+    margin: 0;
+}
+
+.figure-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.info-box {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+}
+
+.info-box h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.info-box p {
+    margin-bottom: 1em;
+}
+
+.info-box a {
+    color: white;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #C62828;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    line-height: 1;
+    margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 640px){
+    
+    /* Mobile Gallery Grid Layout */
+    main {
+        display: block;
+    }
+
+    /* Mobile Navigation Styles */
+
+    /* Hamburger Styles */
+    .hamburger {
+        display: block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hamburger-icon {
+        color: white;
+        line-height: 1;
+        font-size: 1.9em;
+    }
+
+    .hamburger:focus,
+    .hamburger-icon:focus {
+        outline: none;
+    }
+    
+    .hamburger:focus .hamburger-icon {
+        outline: 5px solid #69c1db;
+    }
+
+    .hamburger-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0,0,0,0);
+        border: 0;
+    }
+
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    nav {
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.3s ease;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav a {
+        line-height: 40px;
+        border-bottom: 1px solid #C62828;
+        border-top: 1px solid #fcd6d6;
+    }
+
+    nav li:last-child a {
+        border-bottom: 1px solid #fcd6d6;
+    }
+
+    .show nav {
+        height: 126px;
+    }
+
+}
+

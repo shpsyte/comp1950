@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+}
+
+
+
+
+
+.wrapper {
+  border: 1px solid blue;
+  padding: 10px;
+}
+.wrapper > div { 
+  border: 1px solid blue; 
+  border-radius: 4px; 
+  padding: 5px 10px; 
+  background-color: rgba(0,0,255,.1)
+}
+
