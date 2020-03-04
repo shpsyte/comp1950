@@ -14,6 +14,8 @@
     // Data Table Column Colour List
     $table-colours-list: $colour1, $colour2, $colour3, $colour4, $colour5;
 
+
+
     // Table Border
     $table-border: 1px solid black;
 
@@ -102,4 +104,9 @@
           
     }
 
+}
+
+#dtable
+{
+    background: #000;
 }
