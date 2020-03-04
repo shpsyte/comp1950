@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,WAAY;EACV,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;EACtB,OAAO,EAAE,8DAA8D;;AAEvE,IAAK;EACJ,UAAU,EARF,KAAY",
+"sources": ["../scss/sass-getting-started.scss"],
+"names": [],
+"file": "site.css"
+}

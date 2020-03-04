@@ -1,0 +1,15 @@
+// Header styles
+header {
+    background-color: $brand-color;
+    padding: $padding/2 $padding;
+    @include flex-layout-row;
+    align-items: center;
+
+    h1 {
+        @include flatten;
+        color: $text-color-light;
+        @media (max-width: $phoneLandscape){
+            font-size: 1.6em;
+        }
+    }
+}
