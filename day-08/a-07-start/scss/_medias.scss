@@ -1,0 +1,96 @@
+@media screen and (max-width: 900px) {
+  .btn-menu {
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 1.3rem;
+    @include color-write;
+    text-transform: uppercase;
+    line-height: 90px;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+    clear: both;
+    background-color: $header-bg;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  header nav a {
+    display: block;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  .show header {
+    height: auto;
+  }
+
+  .show header nav {
+    display: block;
+  }
+
+  .top-banner {
+    padding: 10vw 0;
+  }
+
+  .top-banner h2 {
+    font-size: 7vw;
+  }
+
+  .top-banner p {
+    font-size: 3.5vw;
+  }
+
+  .mid-banner h2 {
+    font-size: 7vw;
+  }
+
+  .bottom-banner {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    height: 70px;
+  }
+
+  header h1 a {
+    line-height: 70px;
+    font-size: 2.5rem;
+  }
+
+  .btn-menu {
+    line-height: 70px;
+    font-size: 1.2rem;
+  }
+
+  .one-half,
+  .one-third {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    padding: 20px;
+  }
+
+  header .container {
+    padding: 0 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+.column {
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.one-third {
+  width: 33.66%;
+}
+
+section {
+  padding: 10px;
+}
+section h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section article h1 {
+  text-align: center;
+}

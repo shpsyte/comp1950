@@ -1,0 +1,17 @@
+@mixin margin-padding-0 {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin margin-auto-padding-0 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@mixin color-write {
+  color: $write;
+}
+
+@mixin text-decoration-none {
+  text-decoration: none;
+}

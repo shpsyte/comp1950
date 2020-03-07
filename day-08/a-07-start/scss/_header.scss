@@ -1,0 +1,67 @@
+header {
+  background-color: $header-bg;
+  height: 90px;
+}
+
+header .container {
+  background-color: $header-bg;
+  padding: 0 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header a {
+  @include color-write;
+}
+
+header a:hover,
+header a:active,
+header a:focus {
+  @include color-write;
+}
+
+header h1 {
+  margin-bottom: 0;
+}
+
+header h1 a {
+  margin: 0;
+  line-height: 90px;
+  font-size: 3rem;
+  float: left;
+}
+
+.btn-menu {
+  display: none;
+}
+
+header nav {
+  width: 600px;
+}
+
+header nav ul {
+  @include margin-padding-0;
+  list-style: none;
+  display: flex;
+}
+
+header nav li {
+  width: 20%;
+}
+
+header nav a {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 90px;
+}
+
+header nav a:hover,
+header nav a:active,
+header nav a:focus {
+  @include color-write;
+  background-color: rgba(255, 255, 255, 0.3);
+  @include text-decoration-none;
+}

@@ -1,0 +1,15 @@
+footer {
+  background-color: black;
+  @include color-write;
+  padding: 30px;
+}
+
+footer a {
+  @include color-write;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+  @include color-write;
+}

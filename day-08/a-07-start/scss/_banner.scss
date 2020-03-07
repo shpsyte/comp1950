@@ -1,0 +1,54 @@
+.top-banner {
+  padding: 100px 0;
+}
+
+.top-banner h2 {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.top-banner p {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.mid-banner {
+  position: relative;
+}
+
+.mid-banner h2 {
+  @include color-write;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+}
+
+.bottom-banner {
+  background-color: $bottom-banner-color;
+  padding: 90px 0;
+}
+
+.bottom-banner p {
+  font-family: $font-family-elements, sans-serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.bottom-banner a {
+  @include color-write;
+  display: block;
+  background-color: $header-bg;
+  padding: 14px 40px;
+  width: 200px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: $font-family-elements, sans-serif;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
